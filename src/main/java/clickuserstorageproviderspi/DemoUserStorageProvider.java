@@ -12,6 +12,7 @@ import org.keycloak.storage.StorageId;
 import org.keycloak.storage.UserStorageProvider;
 import org.keycloak.storage.user.UserLookupProvider;
 
+
 public class DemoUserStorageProvider implements
         UserStorageProvider,
         UserLookupProvider,
@@ -44,13 +45,11 @@ public class DemoUserStorageProvider implements
 
     @Override
     public boolean isValid(RealmModel realmModel, UserModel userModel, CredentialInput credentialInput) {
-//        if (!supportsCredentialType(credentialInput.getType()) || !(credentialInput instanceof UserCredentialModel)) {
-//            return false;
-//        }
-//        UserCredentialModel cred = (UserCredentialModel) credentialInput;
-//        return repository.validateCredentials(userModel.getUsername(), cred.getChallengeResponse());
-
-        return true;
+        if (!supportsCredentialType(credentialInput.getType()) || !(credentialInput instanceof UserCredentialModel)) {
+            return false;
+        }
+        UserCredentialModel cred = (UserCredentialModel) credentialInput;
+        return repository.validateCredentials(userModel.getUsername(), cred.getChallengeResponse());
     }
 
     @Override

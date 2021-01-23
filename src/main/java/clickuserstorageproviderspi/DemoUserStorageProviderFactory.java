@@ -17,4 +17,5 @@ public class DemoUserStorageProviderFactory implements UserStorageProviderFactor
     public String getId() {
         return "click-authentication-provider";
     }
+
 }
