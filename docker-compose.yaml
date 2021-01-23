@@ -1,6 +1,0 @@
-version: "3.9"
-services:
-  redis:
-    image: "keycloak-demo-user-spi"
-    volumes:
-            - D:/Programming/Keycloak/keycloak-user-spi-demo/artifact:/

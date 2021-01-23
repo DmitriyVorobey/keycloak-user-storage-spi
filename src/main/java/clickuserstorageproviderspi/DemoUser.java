@@ -1,8 +1,5 @@
-package dasniko.keycoak.user;
+package clickuserstorageproviderspi;
 
-/**
- * @author Niko Köbler, http://www.n-k.de, @dasniko
- */
 public class DemoUser {
 
     private String id;

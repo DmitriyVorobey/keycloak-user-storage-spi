@@ -1,4 +1,4 @@
-package dasniko.keycoak.user;
+package clickuserstorageproviderspi;
 
 import org.keycloak.component.ComponentModel;
 import org.keycloak.models.KeycloakSession;
@@ -6,9 +6,6 @@ import org.keycloak.models.RealmModel;
 import org.keycloak.storage.StorageId;
 import org.keycloak.storage.adapter.AbstractUserAdapterFederatedStorage;
 
-/**
- * @author Niko Köbler, http://www.n-k.de, @dasniko
- */
 public class UserAdapter extends AbstractUserAdapterFederatedStorage {
 
     private final DemoUser user;
