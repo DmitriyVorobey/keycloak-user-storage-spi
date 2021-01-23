@@ -20,9 +20,9 @@ public class DemoUserStorageProvider implements
 
     private final KeycloakSession session;
     private final ComponentModel model;
-    private final DemoUserStorageRepository repository;
+    private final HttpUserStorageRepository repository;
 
-    public DemoUserStorageProvider(KeycloakSession session, ComponentModel model, DemoUserStorageRepository repository) {
+    public DemoUserStorageProvider(KeycloakSession session, ComponentModel model, HttpUserStorageRepository repository) {
         this.session = session;
         this.model = model;
         this.repository = repository;

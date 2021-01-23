@@ -10,7 +10,7 @@ public class DemoUserStorageProviderFactory implements UserStorageProviderFactor
     public DemoUserStorageProvider create(KeycloakSession keycloakSession, ComponentModel componentModel) {
         return new DemoUserStorageProvider(keycloakSession,
                                             componentModel,
-                                            new DemoUserStorageRepository());
+                                            new HttpUserStorageRepository());
     }
 
     @Override

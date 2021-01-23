@@ -2,7 +2,9 @@ package clickuserstorageproviderspi;
 
 public class DemoUserStorageRepository {
     DemoUser user = new DemoUser("1", "jack",
-                            "sparrow", true, System.currentTimeMillis()){
+                            "sparrow",
+                            true, System.currentTimeMillis(),
+                            "sparrow@gmai.com"){
 
     };
 
